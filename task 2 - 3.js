@@ -11,10 +11,10 @@ f('s',9,3) // Error: all parameters type should be a Number
 //  Решение
 
 function f(a, b, c) {
-    if (typeof(a) === "number" && typeof(b) === "number" && typeof(c) === "number") {
+    if (typeof a === 'number' && typeof b === 'number' && typeof c === 'number') {
         return (a - b) / c;
     } else {
-        throw new Error('Error: all parameters type should be a Number'); // --- Проверить синтаксис.
+        throw new Error('all parameters type should be a Number');
     }
 }
 
@@ -24,8 +24,4 @@ console.log(f('s',9,3));
 // Результат
 
 // 3
-// /home/HE080372KVG/JS-PB/HW 2/task 2 - 3.js:17
-//         throw new Error('Error: all parameters type should be a Number'); // --- Проверить синтаксис.
-//         ^
-
-// Error: Error: all parameters type should be a Number
+// Error: all parameters type should be a Number

@@ -15,11 +15,10 @@ f(1,2,'s',4); // Error: all parameters type should be a Number
 function f(a) {
     let sum = 0;
     for (let i in arguments) {
-        if (typeof(arguments[i]) === "number") {
+        if (typeof arguments[i] === 'number') {
             sum += arguments[i];
         } else {
-            throw new Error('Error: all parameters type should be a Number'); // --- Проверить синтаксис.
-            break;                                                            // --- Удалить?
+            throw new Error('all parameters type should be a Number');
         }
     }
     return sum;
@@ -31,10 +30,7 @@ console.log(f(1,2,'s',4)); // Error: all parameters type should be a Number
 
 
 // Результат
+
 // 6
 // 8
-// /home/HE080372KVG/JS-PB/HW 2/task 2 - 2.js:21
-//             throw new Error('Error: all parameters type should be a Number'); // --- Проверить синтаксис.
-//             ^
-
-// Error: Error: all parameters type should be a Number
+// Error: all parameters type should be a Number
