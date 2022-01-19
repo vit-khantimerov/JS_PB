@@ -34,4 +34,7 @@ console.log(f(1,2,'s',4)); // Error: all parameters type should be a Number
 // 6
 // 8
 // /home/HE080372KVG/JS-PB/HW 2/task 2 - 2.js:21
-//             throw new Error('Error: all parameters type should be a Number');
+//             throw new Error('Error: all parameters type should be a Number'); // --- Проверить синтаксис.
+//             ^
+
+// Error: Error: all parameters type should be a Number

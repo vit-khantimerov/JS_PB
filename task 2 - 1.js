@@ -26,5 +26,8 @@ console.log(f('Content'));
 
 // Результат
 512
-// Error: parameter type is not a Number
-// undefined
+// /home/HE080372KVG/JS-PB/HW 2/task 2 - 1.js:20
+//         throw new Error('Error: parameter type is not a Number'); 
+//         ^
+
+// Error: Error: parameter type is not a Number
