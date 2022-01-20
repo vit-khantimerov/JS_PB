@@ -24,13 +24,17 @@ function f(a) {
     return sum;
 }
 
-console.log(f(1,2,3)); // 6
-console.log(f(1,1,1,1,1,1,1,1)); // 8
-console.log(f(1,2,'s',4)); // Error: all parameters type should be a Number
+console.log(f(1,2,3));
+console.log(f(1,1,1,1,1,1,1,1));
+console.log(f(1,2,'s',4));
 
 
 // Результат
 
 // 6
 // 8
+// /home/HE080372KVG/JS-PB/HW 2/task 2 - 2.js:21
+//             throw new Error('all parameters type should be a Number');
+//             ^
+//
 // Error: all parameters type should be a Number
