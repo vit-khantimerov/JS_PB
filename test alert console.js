@@ -58,3 +58,15 @@ console.log( null < 0 ); // false
 console.log( null == 0 ); // false
 console.log( null >= 0 ); // true
 console.log( null <= 0 ); // true
+
+/************************/
+(true) ? console.log('Верно!') : console.log('Неправильно.'); // Верно!
+
+/************************/  // в VS CODE не работает
+let firstName = null;
+let lastName;
+let nickName = "Суперкодер";
+// показывает первое определённое значение:
+console.log(firstName ?? lastName ?? nickName ?? "Аноним"); // Суперкодер
+// показывает первое истинное значение:
+console.log(firstName || lastName || nickName || "Аноним"); // Суперкодер
