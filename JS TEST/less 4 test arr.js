@@ -21,17 +21,24 @@ arr5.copyWithin(0,5,10);
 console.log('arr5.copyWithin(1,4,8) >> ' + arr5); // 6,7,8,9,10,6,7,8,9,10
 
 /************************/
-var s = [1,2,3];
-var d = s.flatMap(function(item){
-    return [[item * 2]];
+var s = [1, 2, 3];
+var d = s.flatMap(function (item, i) {
+    return [[item * i]];
 });
-console.log('s.flatMap(function(item) >> ' + d);  // flatMap is not a function
+console.log('s.flatMap(function(item) >> ' + d);  
+console.log(d);
+// s.flatMap(function(item) >> 0,2,6
+// [ [ 0 ], [ 2 ], [ 6 ] ]
 
-if(Array.flatMap){
-    var mas=[1,2,3,4,5,['5.1','5.2']];
-    var arr=mas.flatMap(function(e){return a+'#';});
-    alert(arr);
-  }else alert('Ваш браузер не підтримує метод flatMap');
+
+if (Array.flatMap) {
+    var mas = [1, 2, 3, 4, 5, ['5.1', '5.2']];
+    var arr = mas.flatMap(function (e) { return a + '#'; });
+    console.log(arr);
+} else {
+    console.log("Ваш браузер не підтримує метод flatMap");
+}
+  
 
 /************************/
 var a = [1,-1,2,-2,3,-3];
