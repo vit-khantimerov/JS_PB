@@ -4,7 +4,8 @@ console.log();
 /************************/
 // "\u001B[38;5;";  - постоянная часть 256-кода цвета, далее [0-255]m
 for (let i = 0; i < 256; i++) {
-    console.log(`\u001B[38;5;${i}mКод цвета ${i}\t >>>  Hello 256-colored World`);
+    // console.log(`\u001B[38;5;${i}mКод цвета ${i}\t >>>  Hello 256-colored World`);
+    console.log(`\u001B[38;5;`,i,'mКод цвета', i,'\t >>>  Hello 256-colored World');
 }
 console.log('\n');
 

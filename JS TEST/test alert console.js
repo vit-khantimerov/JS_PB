@@ -67,3 +67,10 @@ let nickName = "Суперкодер";
 console.log(firstName ?? lastName ?? nickName ?? "Аноним"); // Суперкодер
 // показывает первое истинное значение:
 console.log(firstName || lastName || nickName || "Аноним"); // Суперкодер
+
+/*************************/
+let a = 10, b = 50, c = 100;
+console.log('xxx', a, b, 'c = ', c); // xxx 10 50 c =  100
+console.log(`xxx${a}${b} c = ${c}`); // xxx1050 c = 100
+
+
